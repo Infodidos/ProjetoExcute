@@ -1,13 +1,11 @@
-create database formulario;
+create database Cadastro;
   use cadastro;
 
       create table cadastro(
         cod_cad int not null auto_increment primary key,
         nome varchar(50) not null,
-        cpf int(11) not null,
-        sexo varchar(1) not null,
+        genero varchar(1) not null,
         data_nasc date not null,
-        ano_prova int(4) not null,
         email varchar(40) not null,
         senha varchar(20) not null
       );
